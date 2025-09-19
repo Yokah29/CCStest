@@ -8,7 +8,7 @@
 body {
     background-color: salmon;
     font-family: "DMSerif", serif; 
-    background-image: url(/fond.webp);
+    background-image: url(/fond.webp); center/cover/no-repeat;
 }
 
 h1 {
