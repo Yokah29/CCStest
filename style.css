@@ -1,5 +1,25 @@
-body
-{
-    background-color: salmon;}
 
-    
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@font-face {
+    font-family: "DMSerif";
+    src: url(/assets/DMSerifDisplay-Regular.ttf);
+}
+
+body {
+    background-color: salmon;
+    font-family: "DMSerif", serif; 
+    background-image: url(/assets/fond.jpg);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-shadow: 2px -2px 2px #0000003d;
+    color: antiquewhite;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;  font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
