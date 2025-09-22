@@ -53,11 +53,14 @@ h2 {
 }
 
 .flexbox,
-.grid {
+.grid
+.absolute
+ {
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 
 }
 
@@ -130,4 +133,14 @@ input,textarea {
  #btn-submit:hover {
     background: darkcyan;
     color: white;
+ }
+
+ /*Absolute (permet de créer un élement qui pourra être placé n'importe ou sur le site web */
+
+ #circle1 {
+height: 80px;
+width: 80px;
+background-color: azure;
+position:absolute;
+border-radius: 150px;
  }
