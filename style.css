@@ -3,9 +3,10 @@
 @font-face {
     font-family: "DMSerif";
     src: url(/assets/DMSerifDisplay-Regular.ttf);
-}
 
-< !-- toutes les marges à 0 par défaut* {
+/* slash étoile pour mettre des commentaires sur CSS
+Toutes les marges à 0 par défaut */
+
     margin: 0;
     padding: 0;
 
@@ -58,8 +59,10 @@ h2 {
     margin-top: 20px;
 }
 
+/* display flex pour pouvoir personnaliser sur la page web directement en inspectant */
 .flexbox ul {
     padding: 0;
+    display: flex;
     
 }
 
