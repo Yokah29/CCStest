@@ -4,7 +4,7 @@
     font-family: "DMSerif";
     src: url(/assets/DMSerifDisplay-Regular.ttf);
 
-/* slash étoile pour mettre des commentaires sur CSS
+    /* slash étoile pour mettre des commentaires sur CSS
 Toutes les marges à 0 par défaut */
 
     margin: 0;
@@ -52,18 +52,20 @@ h2 {
 
 }
 
-.flexbox {
+.flexbox,
+.grid {
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+
 }
 
 /* display flex pour pouvoir personnaliser sur la page web directement en inspectant */
 .flexbox ul {
     padding: 0;
     display: flex;
-    
+    justify-content: space-around;
 }
 
 .flexbox li {
@@ -76,3 +78,56 @@ h2 {
     justify-content: space-around;
     align-items: center;
 }
+
+/* Grid, mieux de mettre la taille d'une image en width % comme ça elle s'adapte à la taille de l'écran
+display grid permet de voir sur le web les différentes zones délimités en rouge, là il y a 2 zones on peut donc lui demander de mettre la 1ere zone à 30% et l'autre à 70% par ex  */
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img {
+    width: 80%;
+    margin-top: 20px;
+
+}
+
+/* display grid met tous les élements du formulaire à la ligne - template columns divise le questionnaire en colonne, template row en ligne  (ici2 et 3 ) */ 
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "vi bt" ;
+
+ }
+
+input,textarea {
+    margin: 5px;
+    border: 1px solid darkcyan;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "DMSerif", serif; 
+    border-radius: 5px;
+    height: 50px;
+}
+
+ textarea {
+    grid-area: ta; 
+    resize: none;
+    
+ }
+
+ #btn-submit {
+    grid-area: bt;
+    cursor: pointer;
+    background: cyan;
+    transition: 1s;
+ }
+ #btn-submit:hover {
+    background: darkcyan;
+    color: white;
+ }
