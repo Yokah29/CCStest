@@ -8,16 +8,13 @@
 Toutes les marges à 0 par défaut */
 
     margin: 0;
-    padding: 0;
-
-}
+    padding: 0;}
 
 -->body {
     background-color: salmon;
     font-family: "DMSerif", serif;
     background: url(/fond.webp) no-repeat center/cover;
-    min-height: 100vh;
-}
+    min-height: 100vh;}
 
 h1 {
     text-transform: uppercase;
@@ -30,8 +27,7 @@ h1 {
     font-family: 'Oswald', sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
-}
+    font-style: normal;}
 
 main {
     min-height: 500px;
@@ -43,9 +39,7 @@ main {
     box-shadow: inset 1px 1px 3px 4px #e91e62f1;
     padding: 30px;
 
-    background: rgba(255, 255, 255, 0.815);
-
-}
+    background: rgba(255, 255, 255, 0.815);}
 
 h2 {
     margin: 0;
@@ -60,16 +54,13 @@ h2 {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    min-height: 150px;
-
-}
+    min-height: 150px;}
 
 /* display flex pour pouvoir personnaliser sur la page web directement en inspectant */
 .flexbox ul {
     padding: 0;
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-around;}
 
 .flexbox li {
     list-style: none;
@@ -79,21 +70,17 @@ h2 {
     background-color: rgb(163, 127, 111);
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
+    align-items: center;}
 
 /* Grid, mieux de mettre la taille d'une image en width % comme ça elle s'adapte à la taille de l'écran
 display grid permet de voir sur le web les différentes zones délimités en rouge, là il y a 2 zones on peut donc lui demander de mettre la 1ere zone à 30% et l'autre à 70% par ex  */
 .grid-container {
     display: grid;
-    grid-template-columns: 30% 70%;
-}
+    grid-template-columns: 30% 70%;}
 
 .grid img {
     width: 80%;
-    margin-top: 20px;
-
-}
+    margin-top: 20px;}
 
 /* display grid met tous les élements du formulaire à la ligne - template columns divise le questionnaire en colonne, template row en ligne  (ici2 et 3 ) */ 
 
@@ -104,9 +91,7 @@ form {
     grid-template-areas:
     "i1 i2"
     "ta ta"
-    "vi bt" ;
-
- }
+    "vi bt" ;}
 
 input,textarea {
     margin: 5px;
@@ -115,14 +100,11 @@ input,textarea {
     font-size: 1.1rem;
     font-family: "DMSerif", serif; 
     border-radius: 5px;
-    height: 50px;
-}
+    height: 50px;}
 
  textarea {
     grid-area: ta; 
-    resize: none;
-    
- }
+    resize: none;}
 
  #btn-submit {
     grid-area: bt;
