@@ -42,19 +42,23 @@ main {
     background: rgba(255, 255, 255, 0.815);}
 
 h2 {
-    margin: 0;
+    margin: 10;
+
 
 }
 
+/* ne pas oublier la virgule si on ajoute qqchose derrière, ne pas mettre si c'est la fin */ 
+
 .flexbox,
-.grid
+.grid,
 .absolute
- {
+{
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    min-height: 150px;}
+    min-height: 150px;
+}
 
 /* display flex pour pouvoir personnaliser sur la page web directement en inspectant */
 .flexbox ul {
@@ -75,7 +79,9 @@ h2 {
 /* Grid, mieux de mettre la taille d'une image en width % comme ça elle s'adapte à la taille de l'écran
 display grid permet de voir sur le web les différentes zones délimités en rouge, là il y a 2 zones on peut donc lui demander de mettre la 1ere zone à 30% et l'autre à 70% par ex  */
 .grid-container {
+
     display: grid;
+
     grid-template-columns: 30% 70%;}
 
 .grid img {
@@ -117,12 +123,25 @@ input,textarea {
     color: white;
  }
 
- /*Absolute (permet de créer un élement qui pourra être placé n'importe ou sur le site web */
-
+ /* Absolute, par défaut si on met top right 0 le cercle ira en haut à droite de la page web car sans position relative il est en absolute par rapport au body, si on rajoute position relative après un .absolute il sera cloisoné dans la case absolute à la place  */ 
+ .absolute {
+    position: relative; }
  #circle1 {
-height: 80px;
-width: 80px;
-background-color: azure;
-position:absolute;
-border-radius: 150px;
+    height: 80px;
+    width: 80px;
+    background-color: maroon;
+    border-radius: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+
+ #circle2 {
+    height: 80px;
+    width: 80px;
+    background-color: teal;
+    border-radius: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
  }
