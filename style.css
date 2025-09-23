@@ -13,7 +13,7 @@ Toutes les marges à 0 par défaut */
 -->body {
     background-color: salmon;
     font-family: "DMSerif", serif;
-    background: url(/fond.webp) no-repeat center/cover;
+    background: url(/assets/fond.webp) no-repeat center/cover;
     min-height: 100vh;}
 
 h1 {
